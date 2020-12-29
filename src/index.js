@@ -3,10 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import HeaderComponent from './components/headerComponent';
+import FooterComponent from './components/footerComponent';
+
+
+//startsidan typ
 
 ReactDOM.render(
   <React.StrictMode>
+    <HeaderComponent />
     <App />
+    <FooterComponent />
   </React.StrictMode>,
   document.getElementById('root')
 );
