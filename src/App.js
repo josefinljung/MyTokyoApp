@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './App.scss';
+import './Main.scss';
 
 //html som syns i index
 

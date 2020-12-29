@@ -1,0 +1,75 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One:400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+
+//COLORS
+$bgColor: white;
+$fontColor: black;
+$blue: #09166c;
+$lightgreen: #EBF8F3;
+$lightsalmon: #FFF1EC;
+$offwhite: #FBFBFB;
+
+$yellow: rgb(55, 159, 39);
+
+
+//FONTS
+$heading: "Yeseva One", ;
+$copy: "Roboto", ;
+
+h1 {
+    font-family: $heading;
+    font-size: 72px;
+    color: $fontColor;
+}
+
+h2 {
+    font-family: $heading;
+    font-size: 36px;
+    color: $fontColor;
+}
+
+h3 {
+    font-family: $heading;
+    font-size: 24px;
+    color: $fontColor;
+}
+
+h4 {    
+    font-family: $heading;
+    font-size: 18px;
+    color: $fontColor;
+}
+
+p {
+    font-family: $copy;
+}
+
+p.big {
+    font-size: 20px;
+}
+
+p.medium {
+    font-size: 16px;
+}
+
+p.small {
+    font-size: 14px;
+}
+
+a {
+    font-family: $heading;
+    color: $fontColor;
+    font-size: 24px;
+    text-decoration: none;
+
+    &:hover, &:active {
+        text-decoration: underline;
+    }
+}
+
+div {
+    margin: 0px 50px 0px 50px;
+}
