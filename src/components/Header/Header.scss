@@ -1,0 +1,53 @@
+@import '../../Variables.scss';
+$assetPath :"../../icons";
+
+
+#header {
+
+    margin: 50px 50px 10px 50px;
+    border-bottom: 1px black solid;
+    
+    #headercontainer {        
+        display: flex;
+        justify-content: space-between;        
+        
+        #headertitle { 
+            margin-bottom: 10px;
+
+            h1 {
+                background-color: $lightgreen;
+                min-width: 33%;
+                text-align: center;
+                padding: 10px;
+                margin-bottom: 10px;
+            }
+            
+            h3 {
+                background-color: $lightsalmon;
+                min-width: 33%;
+                text-align: center;
+                padding: 10px;
+                margin: 0px!important;
+            }
+        }
+        
+        #menu {
+            min-width: 20%;
+            align-self: flex-end;
+            text-align: right;   
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    #header {
+        margin: 20px 20px 10px 20px;
+
+        // #menu {
+        //     background: url(#{$assetPath}/dots.svg);
+        //     min-width: 20%;
+        //     display:inline;
+        // }
+    }
+  }

@@ -1,0 +1,18 @@
+@import '../../../Variables.scss';
+
+
+.navbar {
+    max-width: 20%;
+    height: 100px;
+    background-color: red;
+    display: flex;
+    justify-content: right;
+    margin: 0px 50px 0px 50px;
+
+    .navbar-nav {
+        max-width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+}

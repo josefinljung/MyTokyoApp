@@ -2,8 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Yeseva+One:400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-
-
 //COLORS
 $bgColor: white;
 $fontColor: black;
@@ -23,13 +21,9 @@ h1 {
     font-family: $heading;
     font-size: 72px;
     color: $fontColor;
+    margin-top: 0px!important;
 }
 
-h2 {
-    font-family: $heading;
-    font-size: 36px;
-    color: $fontColor;
-}
 
 h3 {
     font-family: $heading;
@@ -63,6 +57,7 @@ a {
     font-family: $heading;
     color: $fontColor;
     font-size: 24px;
+    font-weight: 600;
     text-decoration: none;
 
     &:hover, &:active {
@@ -70,6 +65,25 @@ a {
     }
 }
 
-div {
-    margin: 0px 50px 0px 50px;
+
+@media only screen and (max-width: 480px) {
+
+    h1 {
+        font-family: $heading;
+        font-size: 36px;
+        color: $fontColor;
+        margin-top: 0px!important;
+    }
+
+    h3 {
+        font-family: $copy;
+        font-size: 14px;
+        color: $fontColor;
+    }
+
+    h4 {    
+        font-family: $heading;
+        font-size: 18px;
+        color: $fontColor;
+    }
 }

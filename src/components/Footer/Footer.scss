@@ -1,0 +1,24 @@
+@import '../../Variables.scss';
+
+footer {
+    background-color: $offwhite;
+    position: fixed;
+    // left: 0; varför?
+    bottom: 0;    
+    
+    #footercontainer {
+        height: 200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px 50px 0px 50px;
+
+        #footerleft, #footericons, #footerright {
+            max-width: 33%;;
+        }
+
+        #footerright {
+            text-align: right;
+        }
+    }
+}

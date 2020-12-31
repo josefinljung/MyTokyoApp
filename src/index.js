@@ -3,17 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import HeaderComponent from './components/headerComponent';
-import FooterComponent from './components/footerComponent';
-
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 
 //startsidan typ
 
 ReactDOM.render(
   <React.StrictMode>
-    <HeaderComponent />
+    <Header />
     <App />
-    <FooterComponent />
+    <Footer />
   </React.StrictMode>,
   document.getElementById('root')
 );

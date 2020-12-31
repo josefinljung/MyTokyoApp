@@ -1,10 +1,12 @@
-@import '../src/components/aboutComponent.scss';
-@import '../src/components/articleComponent.scss';
-@import '../src/components/footerComponent.scss';
-@import '../src/components/headerComponent.scss';
-@import '../src/components/inspirationComponent.scss';
-@import '../src/components/landingpageComponent.scss';
+@import '../src/components/About/About.scss';
+@import '../src/components/Article/Article.scss';
+@import '../src/components/Footer/Footer.scss';
+@import '../src/components/Header/Header.scss';
+@import '../src/components/Header/Navbar/Navbar.scss';
+@import '../src/components/Inspiration/Inspiration.scss';
+@import '../src/components/Landingpage/Landingpage.scss';
 @import '../src/App.scss';
 
-//Not working yet
-@import './Variables.scss';
+
+@import '../src/Variables.scss';
+
