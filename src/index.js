@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 
+
 //startsidan typ
 
 ReactDOM.render(

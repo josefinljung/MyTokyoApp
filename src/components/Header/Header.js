@@ -1,9 +1,20 @@
 import '../../Main.scss';
 import Navbar from './Navbar/Navbar';
+import React, { useState } from "react";
+
 
 //html som syns i index
 
+
 function Header() {
+
+  const [isActive, setActive] = useState("false");
+
+
+  const handleToggle = () => {
+    setActive(!isActive);
+  };
+
   return (
     <div>
       <header id="header">
@@ -13,11 +24,13 @@ function Header() {
               <h3>A sustainable guide to Tokyo</h3>
             </div>
             <div id="menu">
-              <a href="https:www.svt.se">menu</a>
+              <button onClick={handleToggle}>menu</button>
             </div>
         </div>
       </header>
-      <Navbar></Navbar>
+      <div id="navbar-component" className={`${isActive ? "hide" : "show"}`}>
+        <Navbar></Navbar>
+      </div>
 
     </div>
   );

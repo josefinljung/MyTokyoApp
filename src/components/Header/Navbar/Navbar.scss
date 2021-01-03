@@ -1,18 +1,55 @@
 @import '../../../Variables.scss';
 
 
-.navbar {
-    max-width: 20%;
-    height: 100px;
-    background-color: red;
-    display: flex;
-    justify-content: right;
+#navbarcontainer {
+    
+    position: absolute;
+    right: 0px;
+    top: 230px;
+    z-index: 10;
+    width: 320px; 
+    background-color: $offwhite;
     margin: 0px 50px 0px 50px;
 
-    .navbar-nav {
-        max-width: 100%;
-        display: flex;
-        justify-content: space-evenly;
+    .navbar {        
+
+        ul.navbar-nav {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px!important;
+            padding-inline-start: 0px!important;
+            // margin-block-start: 0px!important;
+            margin-block-end: 0px!important;
+
+            h3 {
+                margin-top: 0px!important;
+
+                li {
+                    list-style: none;
+                    writing-mode: vertical-rl;
+                    text-orientation: upright;
+                }
+            }
+        }  
     }
-    
+}
+
+@media only screen and (max-width: 768px) {
+    #navbarcontainer {
+        width: 40%;  
+    }   
+}
+ 
+
+@media only screen and (max-width: 480px) {
+    #navbarcontainer {
+        top: 150px;
+        margin: 0px 20px 0px 20px!important;
+        width: 100%;
+
+        #navbar-nav {
+
+        }
+    }   
 }

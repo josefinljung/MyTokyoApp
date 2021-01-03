@@ -14,11 +14,32 @@ footer {
         margin: 0px 50px 0px 50px;
 
         #footerleft, #footericons, #footerright {
-            max-width: 33%;;
+            max-width: 33%;
         }
 
         #footerright {
             text-align: right;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .footer {
+        width: 100%;
+
+        #footercontainer {
+            height: 100px;            
+            justify-content: center;
+        
+            #footerleft, #footerright {
+                display: none;
+            }
+
+            #footericons {
+                width: 100%;
+                text-align: center;
+            }
         }
     }
 }

@@ -4,19 +4,20 @@ $assetPath :"../../icons";
 
 #header {
 
-    margin: 50px 50px 10px 50px;
+    margin: 50px 50px 0px 50px;
     border-bottom: 1px black solid;
     
     #headercontainer {        
         display: flex;
-        justify-content: space-between;        
+        justify-content: space-between;
+        margin-bottom: 10px;        
         
         #headertitle { 
-            margin-bottom: 10px;
+            max-width: 400px;
 
             h1 {
                 background-color: $lightgreen;
-                min-width: 33%;
+                min-width: 100%;
                 text-align: center;
                 padding: 10px;
                 margin-bottom: 10px;
@@ -24,7 +25,7 @@ $assetPath :"../../icons";
             
             h3 {
                 background-color: $lightsalmon;
-                min-width: 33%;
+                min-width: 100%;
                 text-align: center;
                 padding: 10px;
                 margin: 0px!important;
@@ -39,15 +40,27 @@ $assetPath :"../../icons";
     }
 }
 
+#navbar-component.hide {
+    display: none
+}
+
+#navbar-component.show {
+    display: block;
+}
+
+@media only screen and (max-width: 768px) {
+    #headertitle {
+        max-width: 300px!important;
+    }
+}
+ 
 @media only screen and (max-width: 480px) {
 
     #header {
         margin: 20px 20px 10px 20px;
 
-        // #menu {
-        //     background: url(#{$assetPath}/dots.svg);
-        //     min-width: 20%;
-        //     display:inline;
-        // }
+        #headertitle {
+            max-width: 200px!important;
+        }
     }
-  }
+}

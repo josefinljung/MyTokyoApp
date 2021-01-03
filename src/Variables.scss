@@ -24,6 +24,10 @@ h1 {
     margin-top: 0px!important;
 }
 
+//artikel-rubrik
+h2 {
+    font-size: 36px;
+}
 
 h3 {
     font-family: $heading;
@@ -47,6 +51,7 @@ p.big {
 
 p.medium {
     font-size: 16px;
+    font-family: $copy;
 }
 
 p.small {
@@ -65,6 +70,48 @@ a {
     }
 }
 
+a.footerlink {
+    font-family: $copy; 
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 400;
+
+    &:hover, &:active {
+    text-decoration: underline;
+    }
+}
+
+
+button {
+    font-family: $heading;
+    color: $fontColor;
+    font-size: 24px;
+    font-weight: 600;
+    background-color: transparent;
+    border: 0px!important;
+    padding: 0px!important;
+    outline:none;
+
+    &:hover, &:active, &:focus {
+        text-decoration: underline;
+        outline:none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 72px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    h4 {
+        font-size: 18;
+    }
+}
+
 
 @media only screen and (max-width: 480px) {
 
@@ -75,15 +122,13 @@ a {
         margin-top: 0px!important;
     }
 
-    h3 {
-        font-family: $copy;
+    h3, h4 {
+        font-family: $heading;
         font-size: 14px;
         color: $fontColor;
     }
 
-    h4 {    
-        font-family: $heading;
-        font-size: 18px;
-        color: $fontColor;
+    button {
+        font-size: 14px;
     }
 }
