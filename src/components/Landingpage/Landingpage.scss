@@ -1,1 +1,66 @@
 @import '../../Variables.scss';
+
+.landingpagecontainer {
+        height: 800px;    
+        margin: 50px 50px 200px 50px;
+        display: flex;
+
+    .allarticlescontainer {
+
+        width: 70%;
+        border-right: 1px black solid;
+        padding-right: 50px;
+
+        .singlearticlecontainer {
+            width: 100%;
+            display: flex;
+
+            .test {
+                width: 25%;
+                justify-content: left;
+                // border: 1px red solid;
+                margin-right: 50px;
+                height: fit-content;
+            
+                .articleheading {
+                    background-color: $lightgreen;
+                    margin-right: 50px;
+                    border-bottom: 1px black solid;
+                    padding: 10px;
+                }
+
+                .articledate {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    text-align: right;
+                    width: 100%;
+                }
+            
+                .articlecopy{
+                    background-color: $lightgreen;
+                    padding: 10px;
+                    line-height: 1;
+                    text-align: justify;
+                }
+            }
+
+            .articleImage {
+                justify-content: right;
+                width: 600px;
+                height: 372px;
+                background-color: darkgrey;
+                // border: 1px green solid;
+            }
+        }
+    }
+
+    .landingpageinfo {
+
+        // border: 1px black solid;    
+        margin-left: 50px;
+        
+        .funfact {
+            text-align: center;            
+        }
+    }
+}
