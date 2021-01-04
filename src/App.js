@@ -2,7 +2,6 @@
 import React from 'react';
 import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-// import ReactDOM from 'react-dom';
 import './Main.scss';
 import Eat from '../src/components/Eat/Eat';
 import Shop from '../src/components/Shop/Shop';
@@ -25,8 +24,9 @@ function App() {
           <Route path="/about" component={About} />
           <Route path="/article" component={Article} />
           <Route path="/inspiration" component={Inspiration} />
-          <Route path="/" exact component={LandingPage} />
           <Route path="*" component={LandingPage} />
+          <Route path="/" exact component={LandingPage} />
+          <LandingPage/>
         </Switch>
         <Footer />
       </div>

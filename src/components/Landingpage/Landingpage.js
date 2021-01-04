@@ -1,10 +1,5 @@
 import '../../Main.scss';
 
-
-
-//html som syns i index
-
-
 function LandingPage() {
 
   return (
