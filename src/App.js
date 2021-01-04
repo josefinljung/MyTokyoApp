@@ -1,26 +1,36 @@
 // import logo from './logo.svg';
-import './Main.scss';
+import React from 'react';
+import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-//html som syns i index
+// import ReactDOM from 'react-dom';
+import './Main.scss';
+import Eat from '../src/components/Eat/Eat';
+import Shop from '../src/components/Shop/Shop';
+import About from '../src/components/About/About';
+import Article from '../src/components/Article/Article';
+import Inspiration from '../src/components/Inspiration/Inspiration'
+import LandingPage from '../src/components/Landingpage/Landingpage'
+
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
-    <div className="App">
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+        <Switch>
+          <Route path="/eat" component={Eat} />
+          <Route path="/shop" component={Shop} />
+          <Route path="/about" component={About} />
+          <Route path="/article" component={Article} />
+          <Route path="/inspiration" component={Inspiration} />
+          <Route path="/" exact component={LandingPage} />
+          <Route path="*" component={LandingPage} />
+        </Switch>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

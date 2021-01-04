@@ -1,12 +1,12 @@
 @import '../../Variables.scss';
 
 .landingpagecontainer {
-        height: 800px;    
-        margin: 50px 50px 200px 50px;
+        height: fit-content; 
+        // min-height: 100vh;  
+        margin: 50px 50px 100px 50px;
         display: flex;
 
     .allarticlescontainer {
-
         width: 70%;
         border-right: 1px black solid;
         padding-right: 50px;
@@ -14,24 +14,34 @@
         .singlearticlecontainer {
             width: 100%;
             display: flex;
+            min-height: 300px;
+            margin-bottom: 50px;
 
-            .test {
+            .articletextsection {
                 width: 25%;
+                flex: 1;
                 justify-content: left;
                 // border: 1px red solid;
                 margin-right: 50px;
-                height: fit-content;
+
+                // funkar inte än
+                // .allarticlescontainer:nth-child(odd) .singlearticlecontainer .articletextsection h4{
+                //     background-color: red;
+                // }
+                  
+                // .allarticlescontainer:nth-child(even) .singlearticlecontainer .articletextsection h4{
+                //     background-color: blue;
+                // }                  
             
                 .articleheading {
-                    background-color: $lightgreen;
                     margin-right: 50px;
                     border-bottom: 1px black solid;
                     padding: 10px;
                 }
 
                 .articledate {
-                    padding-top: 10px;
-                    padding-bottom: 10px;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
                     text-align: right;
                     width: 100%;
                 }
@@ -39,28 +49,102 @@
                 .articlecopy{
                     background-color: $lightgreen;
                     padding: 10px;
-                    line-height: 1;
                     text-align: justify;
                 }
             }
 
-            .articleImage {
+            .articleimage {
                 justify-content: right;
                 width: 600px;
-                height: 372px;
+                flex: 1;
                 background-color: darkgrey;
-                // border: 1px green solid;
+            }
+
+
+        }
+    }
+
+    .landingpageinfo {   
+        width: 30%;
+        margin-left: 50px;
+        text-align: center;  
+        
+        .didyouknowcontainer {
+            text-align: center;            
+        }
+
+        .olderarticlescontainer {
+            margin-top: 50px;
+
+            .olderarticlesheading {
+                margin-bottom: 20px!important;
+            }
+
+            .olderarticle {
+
+                h4 {
+                    margin-top:10px!important;
+                    margin-bottom: 20px!important;
+
+                }                    
+                .olderarticleimage {
+                    margin: auto;
+                    // width: 250px;
+                    height: 200px;
+                    background-color: darkgrey;
+                } 
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1040px) {
+
+    .allarticlescontainer {
+        width: 100%!important;
+        border-right: none!important;
+        padding-right: 0px!important;
+    }
+
+    .landingpageinfo {
+        display: none
+    }
+}
+ 
+@media only screen and (max-width: 480px) {   
+    
+    .landingpagecontainer {
+        height: fit-content;   
+        margin: 20px 20px 50px 20px;
+        
+    .allarticlescontainer {
+        width: 100%;
+        border-right: none;
+        padding-right: 0px;
+
+        .singlearticlecontainer {
+
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-bottom: 30px;
+
+            .articletextsection {
+                min-width: fit-content;
+                margin-right: 0px!important;
+                margin-bottom: 10px;
+            }
+
+            .articleimage {
+                width: 100%;
+                height: 150px;
+                flex: none;
             }
         }
     }
 
-    .landingpageinfo {
-
-        // border: 1px black solid;    
-        margin-left: 50px;
-        
-        .funfact {
-            text-align: center;            
+        .landingpageinfo {
+            display: none
         }
     }
 }

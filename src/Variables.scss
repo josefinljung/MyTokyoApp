@@ -46,6 +46,7 @@ h4 {
 
 p {
     font-family: $copy;
+    margin: 0px!important;
 }
 
 p.big {
@@ -101,7 +102,7 @@ button {
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1040px) {
     h1 {
         font-size: 72px;
     }
@@ -129,6 +130,18 @@ button {
         font-family: $heading;
         font-size: 14px;
         color: $fontColor;
+    }
+
+    a {
+        font-family: $heading;
+        color: $fontColor;
+        font-size: 24px;
+        font-weight: 600;
+        text-decoration: none;
+    
+        &:hover, &:active {
+            text-decoration: underline;
+        }
     }
 
     button {

@@ -2,8 +2,7 @@
 
 
 #navbarcontainer {
-    
-    position: absolute;
+        position: absolute;
     right: 0px;
     top: 230px;
     z-index: 10;
@@ -19,37 +18,32 @@
             justify-content: space-around;
             margin-top: 20px!important;
             padding-inline-start: 0px!important;
-            // margin-block-start: 0px!important;
             margin-block-end: 0px!important;
 
-            h3 {
-                margin-top: 0px!important;
-
-                li {
-                    list-style: none;
-                    writing-mode: vertical-rl;
-                    text-orientation: upright;
+            li {                
+                padding-bottom: 10px;
+                writing-mode: vertical-rl;
+                text-orientation: upright;
+                list-style: none;
+                
+                a {
+                    margin-top: 0px!important;
                 }
             }
         }  
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1040px) {
     #navbarcontainer {
         width: 40%;  
     }   
-}
- 
+} 
 
 @media only screen and (max-width: 480px) {
     #navbarcontainer {
         top: 150px;
         margin: 0px 20px 0px 20px!important;
-        width: 100%;
-
-        #navbar-nav {
-
-        }
+        width: -webkit-fill-available;
     }   
 }
