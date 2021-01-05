@@ -2,7 +2,7 @@
 
 
 #navbarcontainer {
-        position: absolute;
+    position: absolute;
     right: 0px;
     top: 230px;
     z-index: 10;
@@ -23,11 +23,18 @@
             li {                
                 padding-bottom: 10px;
                 writing-mode: vertical-rl;
+                -webkit-writing-mode: vertical-rl;
+                -ms-writing-mode: vertical-rl;
                 text-orientation: upright;
                 list-style: none;
                 
                 a {
                     margin-top: 0px!important;
+
+                    &:hover, &:focus, &:active {
+                        text-decoration: none;
+
+                    }
                 }
             }
         }  

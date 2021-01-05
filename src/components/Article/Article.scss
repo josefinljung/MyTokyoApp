@@ -1,1 +1,97 @@
 @import '../../Variables.scss';
+     
+.articlecontainer {
+    height: fit-content; 
+    display: flex;
+    margin: 50px 50px 100px 50px;
+    
+    .articletextsection {
+        width: 50%;
+        // flex: 1;
+        justify-content: left;
+        margin-right: 50px; 
+
+        .articleheading {
+            margin-right: 50px;
+            border-bottom: 1px black solid;
+            padding: 10px;
+            background-color: $lightgreen;
+        }
+
+        .articledate {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            text-align: right;
+        }
+
+        .articlecopy{
+            background-color: $lightgreen;
+            padding: 10px;
+            text-align: justify;
+        }
+    }
+
+    .articleleftsection {
+        width: 50%;
+
+        .articleimage {
+            justify-content: right;
+            min-height: 400px;
+            background-color: darkgrey;
+        }
+
+        .articleplaceinformation {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            
+            .articleadressinfo, .articleopeninghoursinfo {
+                
+                :first-child {
+                    font-weight: 800;
+                }
+            }            
+        }
+            
+        .articleimagesecond {
+            justify-content: right;
+            min-height: 400px;
+            background-color: darkgrey;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1040px) {
+
+    .articlecontainer {
+        flex-direction: column;
+        
+        .articletextsection {
+            width: 100%;            
+        }
+
+        .articleleftsection {
+            width: 100%;
+            margin-top: 10px;            
+        }
+    }
+}
+ 
+@media only screen and (max-width: 480px) {   
+    .articlecontainer {
+        margin: 20px 20px 50px 20px;
+
+        .articleheading {
+            font-size: 18px;
+        }
+
+        .articleleftsection {
+            
+            .articleplaceinformation {
+                p.articleadressinfo, p.articleopeninghoursinfo {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

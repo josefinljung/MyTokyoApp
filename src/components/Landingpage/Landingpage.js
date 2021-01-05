@@ -5,20 +5,25 @@ function LandingPage() {
   return (
       <div className="landingpagecontainer">
         <div className="allarticlescontainer">
+            {/* loopa article */}
             <div className="singlearticlecontainer">
                 <div className="articletextsection">
+                    {/* interpolera heading */}
                     <h4 className="articleheading">
                         This is a short heading
                     </h4>
+                    {/* interpolera articledate */}
                     <h4 className="articledate">
                         18-12-20
                     </h4>
                     <div className="articlecopy">
+                    {/* interpolera articlecopy */}
                         <p className="small">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit...
                         </p>
                     </div>
                 </div>
+                {/* interpolera articleimage */}
                 <div className="articleimage">
                 </div>
             </div>

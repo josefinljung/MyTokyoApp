@@ -5,25 +5,24 @@
         // min-height: 100vh;  
         margin: 50px 50px 100px 50px;
         display: flex;
-
-    .allarticlescontainer {
-        width: 70%;
-        border-right: 1px black solid;
-        padding-right: 50px;
-
-        .singlearticlecontainer {
-            width: 100%;
-            display: flex;
-            min-height: 300px;
-            margin-bottom: 50px;
-
-            .articletextsection {
-                width: 25%;
-                flex: 1;
-                justify-content: left;
-                // border: 1px red solid;
-                margin-right: 50px;
-
+        
+        
+        .allarticlescontainer {
+            width: 70%;
+            border-right: 1px black solid;
+            padding-right: 50px;
+            
+            .singlearticlecontainer {
+                width: 100%;
+                display: flex;
+                min-height: 400px;
+                margin-bottom: 50px;
+                
+                .articletextsection {
+                    flex: 1;
+                    justify-content: left;
+                    margin-right: 50px;
+                    
                 // funkar inte än
                 // .allarticlescontainer:nth-child(odd) .singlearticlecontainer .articletextsection h4{
                 //     background-color: red;
@@ -37,13 +36,13 @@
                     margin-right: 50px;
                     border-bottom: 1px black solid;
                     padding: 10px;
+                    background-color: $lightgreen;
                 }
 
                 .articledate {
                     padding-top: 5px;
                     padding-bottom: 5px;
                     text-align: right;
-                    width: 100%;
                 }
             
                 .articlecopy{
@@ -55,8 +54,7 @@
 
             .articleimage {
                 justify-content: right;
-                width: 600px;
-                flex: 1;
+                width: 70%;
                 background-color: darkgrey;
             }
 
@@ -82,16 +80,12 @@
 
             .olderarticle {
 
-                h4 {
-                    margin-top:10px!important;
-                    margin-bottom: 20px!important;
-
-                }                    
                 .olderarticleimage {
                     margin: auto;
-                    // width: 250px;
                     height: 200px;
                     background-color: darkgrey;
+                    margin-top: 20px;
+                    margin-bottom: 10px;               
                 } 
             }
         }

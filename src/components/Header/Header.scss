@@ -3,88 +3,48 @@ $assetPath :"../../icons";
 
 
 #header {
-
-    margin: 50px 50px 0px 50px;
-    border-bottom: 1px black solid;
-
-    .headerlinks {
-        -webkit-animation: headerlinks 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-                animation: headerlinks 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-    }
-
-@-webkit-keyframes headerlinks {
-    0% {
-      letter-spacing: -0.5em;
-      opacity: 0;
-    }
-    40% {
-      opacity: 0.6;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  @keyframes headerlinks {
-    0% {
-      letter-spacing: -0.5em;
-      opacity: 0;
-    }
-    40% {
-      opacity: 0.6;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
+  margin: 50px 50px 0px 50px;
+  border-bottom: 1px black solid;
   
-    // .headerlinks {
-
-    //     &:hover, &:active, &:focus {
-    //         text-decoration: inherit;
-    //         transform: scale(1.05);
-    //             transition-duration: 0.5s;
-    //     }
-    //}
+  #headercontainer {        
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
     
-    #headercontainer {        
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 10px;        
-        
-        #headertitle { 
-            max-width: 400px;
+    #headertitle { 
+        max-width: 400px;
 
-            h1 {
-                background-color: $lightgreen;
-                min-width: 100%;
-                text-align: center;
-                padding: 10px;
-                margin-bottom: 10px;
-            }
-            
-            h3 {
-                background-color: $lightsalmon;
-                min-width: 100%;
-                text-align: center;
-                padding: 10px;
-                margin: 0px!important;
-            }
+        h1 {
+          background-color: $lightgreen;
+          min-width: 100%;
+          text-align: center;
+          padding: 10px;
+          margin-bottom: 10px;
         }
         
-        #menu {
-            min-width: 20%;
-            align-self: flex-end;
-            text-align: right;   
+        h3 {
+          background-color: $lightsalmon;
+          min-width: 100%;
+          text-align: center;
+          padding: 10px;
+          margin: 0px!important;
         }
     }
-}
+
+    #menu {
+        min-width: 20%;
+        align-self: flex-end;
+        text-align: right;   
+    }
+  }
+} 
 
 #navbar-component.hide {
-    display: none
+  display: none
 }
 
 #navbar-component.show {
-    display: block;
+  display: block;
 }
 
 @media only screen and (max-width: 1040px) {
