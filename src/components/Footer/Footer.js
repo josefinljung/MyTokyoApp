@@ -1,4 +1,7 @@
 import '../../Main.scss';
+import fblogo from  '../../assets/facebook.svg';
+import iglogo from  '../../assets/instagram.svg';
+import letterlogo from '../../assets/email.svg';
 
 
 //html som syns i index
@@ -17,13 +20,13 @@ function FooterComponent() {
         </div>
         <div id="footericons">
           <span>
-            :)
+            <img src={iglogo} alt="instagram" className="iglogo" />
           </span>
           <span>
-            :)
+            <img src={fblogo} alt="facebook" className="fblogo" />
           </span>
           <span>
-            :)
+            <img src={letterlogo} alt="letter" className="letterlogo" />
           </span>
         </div>
         <div id="footerright">

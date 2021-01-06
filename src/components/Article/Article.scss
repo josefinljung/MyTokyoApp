@@ -14,7 +14,7 @@
         .articleheading {
             margin-right: 50px;
             border-bottom: 1px black solid;
-            padding: 10px;
+            padding: 20px;
             background-color: $lightgreen;
         }
 
@@ -26,7 +26,7 @@
 
         .articlecopy{
             background-color: $lightgreen;
-            padding: 10px;
+            padding: 20px;
             text-align: justify;
         }
     }
@@ -67,7 +67,11 @@
         flex-direction: column;
         
         .articletextsection {
-            width: 100%;            
+            width: 100%;     
+
+            .articleheading {
+                font-size: 24px;
+            }
         }
 
         .articleleftsection {

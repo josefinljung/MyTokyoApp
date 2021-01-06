@@ -117,7 +117,6 @@
         padding-right: 0px;
 
         .singlearticlecontainer {
-
             align-items: center;
             justify-content: center;
             flex-direction: column;
@@ -127,6 +126,7 @@
                 min-width: fit-content;
                 margin-right: 0px!important;
                 margin-bottom: 10px;
+                flex: inherit;
             }
 
             .articleimage {

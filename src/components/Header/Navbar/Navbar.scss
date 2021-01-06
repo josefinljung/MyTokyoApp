@@ -6,7 +6,7 @@
     right: 0px;
     top: 230px;
     z-index: 10;
-    width: 320px; 
+    width: 250px; 
     background-color: $offwhite;
     margin: 0px 50px 0px 50px;
 
@@ -31,9 +31,8 @@
                 a {
                     margin-top: 0px!important;
 
-                    &:hover, &:focus, &:active {
+                    .activelink {
                         text-decoration: none;
-
                     }
                 }
             }
@@ -42,9 +41,7 @@
 }
 
 @media only screen and (max-width: 1040px) {
-    #navbarcontainer {
-        width: 40%;  
-    }   
+
 } 
 
 @media only screen and (max-width: 480px) {

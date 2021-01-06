@@ -6,9 +6,9 @@ function Article() {
       {/* loopa article */}
       <div className="articletextsection">
         {/* interpolera heading */}
-        <h3 className="articleheading">
+        <h2 className="articleheading">
             This is a short heading
-        </h3>
+        </h2>
         {/* interpolera articledate */}
         <h3 className="articledate">
             18-12-20

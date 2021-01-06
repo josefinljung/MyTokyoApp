@@ -1,1 +1,63 @@
 @import '../../Variables.scss';
+
+
+.aboutcontainer {
+
+    margin: 50px 50px 100px 50px;
+    display: flex;
+
+    .abouttextcontainer {
+        width: 40%;
+        justify-content: left;
+        margin-right: 50px;
+
+        .aboutheading {
+            background-color: $lightgreen;
+            margin-bottom: 10px!important;
+            padding: 20px;
+        }
+
+        .abouttext {
+            margin-top:10px;
+            background-color: $lightgreen;
+            padding: 20px;
+        }
+    }
+
+    .aboutimagecontainer {
+        
+        width: 60%;
+        justify-content: right;
+
+        .aboutimage {
+
+            width: 100%;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1040px) {
+
+    .aboutcontainer {
+        flex-direction: column;
+        display: flex;
+       
+        
+        .abouttextcontainer {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .aboutimagecontainer {
+            width: 100%;
+        }
+    }
+}
+ 
+@media only screen and (max-width: 480px) {  
+    
+    .aboutcontainer {
+        margin: 20px 20px 50px 20px;
+    }
+}

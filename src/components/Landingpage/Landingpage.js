@@ -1,5 +1,9 @@
 import '../../Main.scss';
 
+
+//getlementbyclassname för att sedan kunna ändra klassnamn 
+//på vartannat element och byt färg
+
 function LandingPage() {
 
   return (

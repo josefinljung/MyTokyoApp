@@ -12,8 +12,29 @@ footer {
         align-items: center;
         margin: 0px 50px 0px 50px;
 
-        #footerleft, #footericons, #footerright {
+        #footerleft, #footerright {
             max-width: 33%;
+        }
+
+        #footericons {
+
+            max-width: 20%;
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+            align-items: baseline;
+
+            .iglogo {
+                width: 30px;
+            }
+                        
+            .fblogo {
+                width: 20px;
+            }
+
+            .letterlogo {
+                width: 30px;
+            }
         }
 
         #footerright {
@@ -36,7 +57,7 @@ footer {
             }
 
             #footericons {
-                width: 100%;
+                max-width: 50%;
                 text-align: center;
             }
         }
