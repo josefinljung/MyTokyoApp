@@ -1,66 +1,66 @@
 @import '../../Variables.scss';
 
 .landingpagecontainer {
-        height: fit-content; 
-        // min-height: 100vh;  
-        margin: 50px 50px 100px 50px;
-        display: flex;
-        
-        
+    height: fit-content; 
+    margin: 50px 50px 100px 50px;
+    display: flex;
+    
         .allarticlescontainer {
             width: 70%;
             border-right: 1px black solid;
-            padding-right: 50px;
+            padding-right: 50px;        
+
+        div:last-child {
+            margin-bottom: 0px!important;
+        }
+        
+        .singlearticlecontainer {
+            width: 100%;
+            display: flex;
+            min-height: 400px;
+            margin-bottom: 50px;
             
-            .singlearticlecontainer {
-                width: 100%;
-                display: flex;
-                min-height: 400px;
-                margin-bottom: 50px;
+            .articletextsection {
+                flex: 1;
+                justify-content: left;
+                margin-right: 50px;
                 
-                .articletextsection {
-                    flex: 1;
-                    justify-content: left;
-                    margin-right: 50px;
-                    
-                // funkar inte än
-                // .allarticlescontainer:nth-child(odd) .singlearticlecontainer .articletextsection h4{
-                //     background-color: red;
-                // }
-                  
-                // .allarticlescontainer:nth-child(even) .singlearticlecontainer .articletextsection h4{
-                //     background-color: blue;
-                // }                  
-            
-                .articleheading {
-                    margin-right: 50px;
-                    border-bottom: 1px black solid;
-                    padding: 10px;
-                    background-color: $lightgreen;
-                }
-
-                .articledate {
-                    padding-top: 5px;
-                    padding-bottom: 5px;
-                    text-align: right;
-                }
-            
-                .articlecopy{
-                    background-color: $lightgreen;
-                    padding: 10px;
-                    text-align: justify;
-                }
+            // funkar inte än
+            // .allarticlescontainer:nth-child(odd) .singlearticlecontainer .articletextsection h4{
+            //     background-color: red;
+            // }
+                
+            // .allarticlescontainer:nth-child(even) .singlearticlecontainer .articletextsection h4{
+            //     background-color: blue;
+            // }                  
+        
+            .articleheading {
+                margin-right: 50px;
+                border-bottom: 1px black solid;
+                padding: 10px;
+                background-color: $lightgreen;
             }
 
-            .articleimage {
-                justify-content: right;
-                width: 70%;
-                background-color: darkgrey;
+            .articledate {
+                padding-top: 5px;
+                padding-bottom: 5px;
+                text-align: right;
             }
+        
+            .articlecopy{
+                background-color: $lightgreen;
+                padding: 10px;
+                text-align: justify;
+            }
+        }
 
-
+        .articleimage {
+            justify-content: right;
+            width: 70%;
+            background-color: darkgrey;
         }
     }
+}
 
     .landingpageinfo {   
         width: 30%;

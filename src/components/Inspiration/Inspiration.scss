@@ -1,1 +1,83 @@
-@import '../../Variables.scss';
+
+.inspirationcontainer {
+    margin: 50px 50px 100px 50px;
+          
+    .inspirationsection {
+        display: flex;
+        background-color: $lightsalmon;
+        padding: 20px;
+        display: flex;
+        margin-bottom: 20px;
+        
+        .inspirationtextsection {
+            width: 65%;
+            margin-right: 50px;
+            align-self: center;
+
+            .inspirationheading, .inspirationcopy {
+                margin-bottom: 20px!important;
+
+                ul {
+                    padding-inline-start: 20px;
+
+                }
+            }
+
+            .inspirationicons {
+                span {
+                    img {
+                        width: 25px;
+                        margin-right: 15px;
+                    }
+
+                    .fblogo, .maplogo {
+                        width: 17px;
+                    }
+                }
+            }
+        }
+
+        .inspirationimage {
+            width: 35%;
+            align-self: center;
+            
+            .test {
+                width: 100%;
+                background-color: darkgray;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1040px) {
+
+    .inspirationcontainer {
+
+        .inspirationsection {
+            flex-direction: column;
+            display: flex;
+
+            .inspirationtextsection {
+                width: 100%;
+                margin-bottom: 10px;
+                width: fit-content;
+                margin-right: 0px;
+            }
+
+            .inspirationimage {
+                width: 100%;
+            }
+        }
+    }
+}
+ 
+@media only screen and (max-width: 480px) {   
+    
+    .inspirationcontainer {
+        margin: 20px 20px 50px 20px;
+    
+        .inspirationcopy {
+            font-size: 16px;
+        }
+    }
+}

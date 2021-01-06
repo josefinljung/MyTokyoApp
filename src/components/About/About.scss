@@ -1,8 +1,6 @@
 @import '../../Variables.scss';
 
-
 .aboutcontainer {
-
     margin: 50px 50px 100px 50px;
     display: flex;
 
@@ -24,13 +22,11 @@
         }
     }
 
-    .aboutimagecontainer {
-        
+    .aboutimagecontainer {        
         width: 60%;
         justify-content: right;
 
         .aboutimage {
-
             width: 100%;
         }
     }
