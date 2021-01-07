@@ -1,5 +1,3 @@
-// import './Main.scss';
-
 function Article() {
   return (
     <div className="articlecontainer">

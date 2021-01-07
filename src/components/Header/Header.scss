@@ -1,7 +1,6 @@
 @import '../../Variables.scss';
 $assetPath :"../../icons";
 
-
 #header {
   margin: 50px 50px 0px 50px;
   border-bottom: 1px black solid;
@@ -15,7 +14,7 @@ $assetPath :"../../icons";
         max-width: 400px;
 
         h1 {
-          background-color: $lightgreen;
+          background-color: $firstcolor;
           min-width: 100%;
           text-align: center;
           padding: 10px;
@@ -23,7 +22,7 @@ $assetPath :"../../icons";
         }
         
         h3 {
-          background-color: $lightsalmon;
+          background-color: $secondcolor;
           min-width: 100%;
           text-align: center;
           padding: 10px;
