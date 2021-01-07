@@ -5,6 +5,18 @@ footer {
     // position: absolute;
     bottom: 0;
     width: 100%;
+
+    .scrolltotop {
+        z-index: 10;
+        position: relative;
+        bottom: 40px;
+        left: 94%;
+
+        img{
+            width: 30px;
+            height: 30px;
+        }
+    }
     
     #footercontainer {
         height: 200px;

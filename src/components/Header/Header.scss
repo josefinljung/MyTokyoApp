@@ -2,7 +2,8 @@
 $assetPath :"../../icons";
 
 #header {
-  margin: 50px 50px 0px 50px;
+  padding-top: 50px;
+  margin: 0px 50px 0px 50px;
   border-bottom: 1px black solid;
   
   #headercontainer {        
@@ -30,10 +31,30 @@ $assetPath :"../../icons";
         }
     }
 
-    #menu {
-        min-width: 20%;
+    #menucontainer.show {
+
+      width: 55px;
+      -webkit-transition: width 1s ease-in-out;
+      -moz-transition: width 1s ease-in-out;
+      -o-transition: width 1s ease-in-out;
+      transition: width 1s ease-in-out;
+    }
+
+    #menucontainer {
+        width: 10px;
+        height: 45px;
         align-self: flex-end;
-        text-align: right;   
+        text-align: right;
+        margin-bottom: 10px;
+
+        .menubutton {
+          width: 100%;
+          height: 10px;
+          background-color: black;
+          display: block;
+          border-radius: 10px;
+          margin-top: 5px;
+        }  
     }
   }
 } 
