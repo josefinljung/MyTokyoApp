@@ -24,16 +24,7 @@
             .articletextsection {
                 flex: 1;
                 justify-content: left;
-                margin-right: 50px;
-                
-            // funkar inte än
-            // .allarticlescontainer:nth-child(odd) .singlearticlecontainer .articletextsection h4{
-            //     background-color: red;
-            // }
-                
-            // .allarticlescontainer:nth-child(even) .singlearticlecontainer .articletextsection h4{
-            //     background-color: blue;
-            // }                  
+                margin-right: 50px;    
         
             .articleheading {
                 margin-right: 50px;
@@ -58,7 +49,11 @@
         .articleimage {
             justify-content: right;
             width: 70%;
-            background-color: darkgrey;
+            height: auto;
+            
+            img {
+                width: 100%;
+            }
         }
     }
 }
@@ -95,18 +90,18 @@
 
 @media only screen and (max-width: 1040px) {
 
-    .allarticlescontainer {
-        width: 100%!important;
-        border-right: none!important;
-        padding-right: 0px!important;
-    }
+//     .allarticlescontainer {
+//         width: 100%!important;
+//         border-right: none!important;
+//         padding-right: 0px!important;
+//     }
 
-    .landingpageinfo {
-        display: none
-    }
-}
+//     .landingpageinfo {
+//         display: none
+//     }
+// }
  
-@media only screen and (max-width: 480px) {   
+// @media only screen and (max-width: 480px) {   
     
     .landingpagecontainer {
         height: fit-content;   
@@ -132,7 +127,7 @@
 
             .articleimage {
                 width: 100%;
-                height: 150px;
+                // height: 150px;
                 flex: none;
             }
         }

@@ -18,8 +18,8 @@ function FooterComponent() {
             <h3>
               Did you enjoy this site?
             </h3>
-            <p class="medium">
-              It was built by Josefin Ljung. Wanna get in touch with her? Feel free to send her an <a class="footerlink" href="mailto: josefin.ljung@hotmail.com">email</a>.
+            <p className="medium">
+              It was built by Josefin Ljung. Wanna get in touch with her? Feel free to send her an <a className="footerlink" href="mailto: josefin.ljung@hotmail.com">email</a>.
             </p>
           </div>
           <div id="footericons">
@@ -37,7 +37,7 @@ function FooterComponent() {
             <h3>
               Wanna share an idea with us?          
             </h3>
-            <p class="medium">
+            <p className="medium">
               We’re always up for tips and inspiration for new articles to add to our page. Send us an email or contact us via Instagram or Facebook.
             </p>
           </div>
