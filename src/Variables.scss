@@ -6,12 +6,13 @@ $bgColor: white;
 $fontColor: black;
 $firstcolor: #EBF8F3;
 $secondcolor: #F9F2FF;
-$secondcolor2: #F9F2FF;
 $offwhite: #FBFBFB;
 
 //FONTS
 $heading: "Yeseva One", ;
 $copy: "Roboto", ;
+
+//HEADINGS
 
 h1 {
     font-family: $heading;
@@ -20,7 +21,6 @@ h1 {
     margin-top: 0px!important;
 }
 
-//HEADINGS
 h2 {
     font-size: 36px;
     margin: 0px!important;
@@ -68,7 +68,7 @@ a {
     text-decoration: none;
 
     &:hover, &:active {
-        text-decoration: underline;
+        color: lighten($color: #000000, $amount: 30)
     }
 }
 
@@ -144,7 +144,7 @@ button {
         text-decoration: none;
     
         &:hover, &:active {
-            text-decoration: underline;
+            text-decoration: none
         }
     }
 
