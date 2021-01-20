@@ -41,12 +41,14 @@
 }
 
 @media only screen and (max-width: 1040px) {
-
+    #navbarcontainer {
+        top: 260px;
+    }
 } 
 
 @media only screen and (max-width: 480px) {
     #navbarcontainer {
-        top: 150px;
+        top: 210px;
         margin: 0px 20px 0px 20px!important;
         width: -webkit-fill-available;
     }   

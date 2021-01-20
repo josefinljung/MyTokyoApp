@@ -42,7 +42,7 @@ function Inspiration() {
         <div className="inspirationtextsection">
           <h2 className="inspirationheading">
             {/* interpolera ut rubrik */}
-            Here’s a list of our top five books about sustainable living.          </h2>
+            Here’s a list of our top five books about sustainable living.</h2>
           <p className="inspirationcopy big">
             {/* interpolera ut brödtext */}
             <ul>

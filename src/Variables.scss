@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Yeseva+One:400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 //COLORS
@@ -14,10 +14,14 @@ $copy: "Roboto", ;
 
 //HEADINGS
 
-h1 {
+h1, h2, h3, h4 {
     font-family: $heading;
-    font-size: 72px;
+    font-weight: normal;
     color: $fontColor;
+}
+
+h1 {
+    font-size: 72px;
     margin-top: 0px!important;
 }
 
@@ -27,16 +31,12 @@ h2 {
 }
 
 h3 {
-    font-family: $heading;
     font-size: 24px;
-    color: $fontColor;
     margin: 0px!important;
 }
 
 h4 {    
-    font-family: $heading;
     font-size: 18px;
-    color: $fontColor;
     margin: 0px!important;
 }
 
@@ -64,7 +64,7 @@ a {
     font-family: $heading;
     color: $fontColor;
     font-size: 24px;
-    font-weight: 600;
+    font-weight: normal;
     text-decoration: none;
 
     &:hover, &:active {
@@ -140,7 +140,6 @@ button {
         font-family: $heading;
         color: $fontColor;
         font-size: 24px;
-        font-weight: 600;
         text-decoration: none;
     
         &:hover, &:active {
