@@ -13,12 +13,12 @@ function AllArticles() {
 
     useEffect( () => {
         axios.get("http://localhost:8000/articles").then(theData => {
-            allArticles(theData.data.map((article) => {;
+            allArticles(theData.data.map((article) => {
                     return(
-                        <div className="singlearticlecontainer" key={article._id}>
+                        <div className="singlearticlecontainer" key={article.Id}>
                             <div className="articletextsection">
                                 <h4 className="articleheading">
-                                    <Link to={`/article/${article._id}`}>{article.Title}</Link>
+                                    <Link to={`/articles/${article.Id}`}>{article.Title}</Link>
                                 </h4>
                                 <h4 className="articledate">
                                     {article.Date}
