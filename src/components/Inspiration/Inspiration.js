@@ -7,15 +7,12 @@ import maplogo from '../../assets/map-marker.svg';
 function Inspiration() {
   return (
     <div className="inspirationcontainer">
-      {/* loopa inspo-grej kanske */}
       <div className="inspirationsection">
         <div className="inspirationtextsection">
           <h2 className="inspirationheading">
-            {/* interpolera ut rubrik */}
             This is a supercool shop.
           </h2>
           <p className="inspirationcopy big">
-            {/* interpolera ut brödtext */}
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a lacinia ex. Nulla quis metus ac nulla sodales auctor eu vel augue. Donec ut sapien sit amet tellus pharetra vulputate. 
           </p>
           <div className="inspirationicons">
@@ -34,10 +31,10 @@ function Inspiration() {
           </div>
         </div>
         <div className="inspirationimage">
-          {/* interpolera ut inspobild */}
           <img alt="inspiration" src={aboutus} className="test"></img>
         </div>
       </div> 
+
       <div className="inspirationsection">
         <div className="inspirationtextsection">
           <h2 className="inspirationheading">
@@ -72,7 +69,36 @@ function Inspiration() {
           {/* interpolera ut inspobild */}
           <img alt="inspiration" src={aboutus} className="test"></img>
         </div>
-      </div>   
+      </div>
+
+      <div className="inspirationsection">
+        <div className="inspirationtextsection">
+          <h2 className="inspirationheading">
+            A sunday market in Harajuku that sells organic vegetables.
+          </h2>
+          <p className="inspirationcopy big">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a lacinia ex. Nulla quis metus ac nulla sodales auctor eu vel augue. Donec ut sapien sit amet tellus pharetra vulputate. 
+          </p>
+          <div className="inspirationicons">
+            <span>
+              <img src={iglogo} alt="instagram" className="iglogo" />
+            </span>
+            <span>
+              <img src={fblogo} alt="facebook" className="fblogo" />
+            </span>
+            <span>
+              <img src={letterlogo} alt="letter" className="letterlogo" />
+            </span>
+            <span>
+              <img src={maplogo} alt="maplogo" className="maplogo" />
+            </span>
+          </div>
+        </div>
+        <div className="inspirationimage">
+          <img alt="inspiration" src={aboutus} className="test"></img>
+        </div>
+      </div> 
+
     </div>
   );
 }
