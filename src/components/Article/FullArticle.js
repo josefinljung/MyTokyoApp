@@ -37,6 +37,12 @@ function FullArticle(props) {
                           {article.Copy2}
                           </p>
                       </div>
+
+                      <div className="articlecopy">
+                          <p className="medium">
+                          {article.Copy3}
+                          </p>
+                      </div>
                     </div>
                     <div className="articleleftsection"> 
                       <div className="articleimage">
@@ -46,7 +52,7 @@ function FullArticle(props) {
                       <div className="articleplaceinformation">
                         <h2 className="articleplacename">
                           {article.PlaceName}  
-                        </h2>              
+                        </h2>            
                         <p className="big articleadressinfo">
                           <span>Adress: </span> 
                           <span className="articleplaceadress">
@@ -62,7 +68,7 @@ function FullArticle(props) {
                       </div>
 
                       <div className="articleimagesecond">
-                        <img src={article.ExtraImage} alt="articleimage" />
+                        <img src={article.Image2} alt="articleimage2" />
                       </div>
                     </div>
                   </div>

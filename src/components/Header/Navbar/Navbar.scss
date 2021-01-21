@@ -1,5 +1,3 @@
-@import '../../../Variables.scss';
-
 
 #navbarcontainer {
     position: absolute;
@@ -48,7 +46,7 @@
 
 @media only screen and (max-width: 480px) {
     #navbarcontainer {
-        top: 210px;
+        top: 160px;
         margin: 0px 20px 0px 20px!important;
         width: -webkit-fill-available;
     }   
