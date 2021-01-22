@@ -1,11 +1,10 @@
 import React from 'react';
 import {Switch, Route } from 'react-router-dom';
 
-import './Main.scss';
 import About from '../src/components/About/About';
 import FullArticle from './components/Article/FullArticle';
-import Inspiration from '../src/components/Inspiration/Inspiration'
-import LandingPage from '../src/components/Landingpage/Landingpage'
+import Inspiration from '../src/components/Inspiration/Inspiration';
+import LandingPage from '../src/components/Landingpage/Landingpage';
 
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';

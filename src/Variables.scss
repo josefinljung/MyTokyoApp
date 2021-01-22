@@ -117,28 +117,25 @@ button {
 
 @media only screen and (max-width: 480px) {
 
-    h1 {
+    h1, h2, h3, h4, a {
         font-family: $heading;
-        font-size: 36px;
         color: $fontColor;
+    }
+
+    h1 {
+        font-size: 36px;
         margin-top: 0px!important;
     }
 
     h2 {
-        font-family: $heading;
         font-size: 20px;
-        color: $fontColor;
     }
 
     h3, h4 {
-        font-family: $heading;
         font-size: 14px;
-        color: $fontColor;
     }
 
     a {
-        font-family: $heading;
-        color: $fontColor;
         font-size: 24px;
         text-decoration: none;
     

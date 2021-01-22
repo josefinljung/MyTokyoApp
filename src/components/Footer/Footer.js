@@ -1,11 +1,7 @@
-import '../../Main.scss';
 import fblogo from  '../../assets/facebook.svg';
 import iglogo from  '../../assets/instagram.svg';
 import letterlogo from '../../assets/email.svg';
 import arrowup from '../../assets/arrowup.svg';
-
-
-//html som syns i index
 
 function FooterComponent() {
   return (

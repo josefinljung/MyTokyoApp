@@ -32,17 +32,14 @@ function Inspiration() {
           </div>
         </div>
         <div className="inspirationimage">
-          <img alt="inspiration" src={img1} className="test"></img>
+          <img alt="inspiration" src={img1} />
         </div>
       </div> 
-
       <div className="inspirationsection">
         <div className="inspirationtextsection">
           <h2 className="inspirationheading">
-            {/* interpolera ut rubrik */}
             Here’s a list of our top five favourite books about sustainable living.</h2>
           <p className="inspirationcopy big">
-            {/* interpolera ut brödtext */}
             <ul>
               <li>Lorem ipsum dolor sit amet - Consectetur Adipiscing Elit</li>
               <li>Nullam sagittis lorem ut - Quam Porttitor Consectetur</li>
@@ -53,11 +50,9 @@ function Inspiration() {
           </p>
         </div>
         <div className="inspirationimage">
-          {/* interpolera ut inspobild */}
-          <img alt="inspiration" src={img2} className="test"></img>
+          <img alt="inspiration" src={img2} />
         </div>
       </div>
-
       <div className="inspirationsection">
         <div className="inspirationtextsection">
           <h2 className="inspirationheading">
@@ -82,10 +77,9 @@ function Inspiration() {
           </div>
         </div>
         <div className="inspirationimage">
-          <img alt="inspiration" src={img1} className="test"></img>
+          <img alt="inspiration" src={img1} />
         </div>
       </div> 
-
     </div>
   );
 }

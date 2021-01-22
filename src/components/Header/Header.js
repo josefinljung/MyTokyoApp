@@ -1,4 +1,3 @@
-import '../../Main.scss';
 import Navbar from './Navbar/Navbar';
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
@@ -12,7 +11,7 @@ function Header() {
   };
 
   return (
-    <div>
+    <React.Fragment>
       <header id="header">
         <div id="headercontainer">
             <div id="headertitle">
@@ -31,7 +30,7 @@ function Header() {
       <div id="navbar-component" className={`${isClicked ? "hide" : "show"}`}>
         <Navbar></Navbar>
       </div>
-    </div>
+    </React.Fragment>
   );
 }
 
